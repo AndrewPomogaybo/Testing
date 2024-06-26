@@ -1,0 +1,124 @@
+﻿<Window x:Class="TestMader.Views.AddUserWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TestMader.Views"
+        mc:Ignorable="d"
+        Title="AddUserWindow" Height="500" Width="500" WindowStartupLocation="CenterScreen" AllowsTransparency="True" WindowStyle="None" Background="Transparent">
+    <Border Background="#CCE5FF" CornerRadius="20">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="100*"/>
+                <ColumnDefinition Width="272*"/>
+                <ColumnDefinition Width="100*"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid Grid.Column="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="35*"/>
+                    <ColumnDefinition Width="62*"/>
+                    <ColumnDefinition Width="9*"/>
+                </Grid.ColumnDefinitions>
+
+                <Grid Grid.Column="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="15*"/>
+                        <RowDefinition Height="43*"/>
+                        <RowDefinition Height="442*"/>
+                    </Grid.RowDefinitions>
+
+                    <Grid Grid.Row="1">
+                        <Image Source="Assets/exit_icon.png" x:Name="Exit" MouseLeftButtonDown="Exit_MouseLeftButtonDown"/>
+                    </Grid>
+
+                </Grid>
+
+            </Grid>
+
+            <Grid Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="54*"/>
+                    <RowDefinition Height="42*"/>
+                    <RowDefinition Height="57*"/>
+                    <RowDefinition Height="45*"/>
+                    <RowDefinition Height="56*"/>
+                    <RowDefinition Height="49*"/>
+                    <RowDefinition Height="57*"/>
+                    <RowDefinition Height="41*"/>
+                    <RowDefinition Height="27*"/>
+                    <RowDefinition Height="47*"/>
+                    <RowDefinition Height="25*"/>
+                </Grid.RowDefinitions>
+
+                <Grid Grid.Row="9">
+                    <Button Content="Зарегистрироваться" FontSize="20" Background="#CCFFFF" x:Name="RegBtn" Click="RegBtn_Click">
+                        <Button.Resources>
+                            <Style TargetType="Border">
+                                <Setter Property="CornerRadius" Value="15"/>
+                            </Style>
+                        </Button.Resources>
+                    </Button>
+                </Grid>
+
+                <Grid>
+                    <TextBlock Text="Имя" VerticalAlignment="Bottom" HorizontalAlignment="Center" FontSize="30"/>
+                </Grid>
+
+                <Grid Grid.Row="1">
+                    <TextBox x:Name="NameTxtBox" HorizontalContentAlignment="Center" FontSize="20">
+                        <TextBox.Resources>
+                            <Style TargetType="Border">
+                                <Setter Property="CornerRadius" Value="15"/>
+                            </Style>
+                        </TextBox.Resources>
+                    </TextBox>
+                </Grid>
+
+                <Grid Grid.Row="2">
+                    <TextBlock Text="Фамилия" VerticalAlignment="Bottom" HorizontalAlignment="Center" FontSize="30"/>
+                </Grid>
+
+                <Grid Grid.Row="3">
+                    <TextBox x:Name="SurnameTxtBox" HorizontalContentAlignment="Center" FontSize="20">
+                        <TextBox.Resources>
+                            <Style TargetType="Border">
+                                <Setter Property="CornerRadius" Value="15"/>
+                            </Style>
+                        </TextBox.Resources>
+                    </TextBox>
+                </Grid>
+
+                <Grid Grid.Row="4">
+                    <TextBlock Text="Логин" VerticalAlignment="Bottom" HorizontalAlignment="Center" FontSize="30"/>
+                </Grid>
+
+                <Grid Grid.Row="5">
+                    <TextBox x:Name="LoginTxtBox" HorizontalContentAlignment="Center" FontSize="20">
+                        <TextBox.Resources>
+                            <Style TargetType="Border">
+                                <Setter Property="CornerRadius" Value="15"/>
+                            </Style>
+                        </TextBox.Resources>
+                    </TextBox>
+                </Grid>
+
+                <Grid Grid.Row="6">
+                    <TextBlock Text="Пароль" VerticalAlignment="Bottom" HorizontalAlignment="Center" FontSize="30"/>
+                </Grid>
+
+                <Grid Grid.Row="7">
+                    <TextBox x:Name="PwdTxtBox" HorizontalContentAlignment="Center" FontSize="20">
+                        <TextBox.Resources>
+                            <Style TargetType="Border">
+                                <Setter Property="CornerRadius" Value="15"/>
+                            </Style>
+                        </TextBox.Resources>
+                    </TextBox>
+                </Grid>
+
+            </Grid>
+
+        </Grid>
+    </Border>
+</Window>
